@@ -1,0 +1,221 @@
+body
+{
+	background-image:url("../image/tlo1.jpg");
+	background-repeat:repeat;
+}	
+
+.div 
+{
+	width:1000px;
+	margin:20px auto;
+	background-color: ;
+	border: 1px solid #000;
+	position:relative;
+	background-color:rgba(96, 96, 112, 0.4);
+}
+
+.logo
+{
+	width:100%;
+	height:80px;
+}	
+
+#slajder-zdjec 
+{
+	padding-top:20px;
+	margin:0px;
+	width:1000px;
+}
+
+#ramka-slajdow 
+{
+	margin:0px;
+	height:200px;
+	overflow:hidden;
+	border:2px solid #C2C2C2;
+}
+
+#slajdy 
+{
+	margin:0px;
+	height:200px;
+	overflow:hidden;
+	position:relative;
+	background-color:rgba(88, 88, 208, 0.4);
+}
+
+#nawigacja 
+{
+	margin:5px 0 0 0;
+	text-align:center;
+	z-index:10;
+}
+
+#nawigacja a 
+{
+	display:inline-block;
+	text-decoration:none;
+	background:#C2C2C2;
+	border-radius:50%;
+	padding:2px 6px;
+	color:#58698C;
+}
+
+#nawigacja a:hover 
+{
+	background:#204AA6;
+}
+
+#slajdy img 
+{
+	position:absolute;
+	top:0;
+	left:auto;
+	z-index:1;
+	opacity:0.5;
+}
+
+.menu
+{
+	width:100%;
+	float:left;
+}
+
+.div2
+{
+	padding:20px;
+}
+ 
+h1  
+{
+	color:rgba(172, 207, 204, 1);
+	clear:both;
+}
+ 
+ul > li 
+{
+	display:inline-block;
+	list-style:none;
+	position:relative;
+	margin:0;
+	float:left;
+	background-color:#000;
+	border:1px solid #bbb;
+	width:185px;
+	height:55px;
+	font-family:Bookman Old Style;
+	vertical-align:middle;
+}
+
+ul > li > ul
+{
+	position:absolute;
+	display:none;
+	top:100%;
+	padding:0;
+	left:0;
+    margin:0;
+	z-index:10;
+
+}
+
+ul > li a:link, ul > li a:visited 
+{
+	text-decoration: none;
+	display:block;
+	background:#000;
+	color:#C2C2C2;
+	text-align:center;
+	width:183px;
+	height:50px;
+	padding-top:5px;
+	font-family:Bookman Old Style;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+ul > li a:hover 
+{
+	background-color:silver;
+	color:#000;
+}
+
+ul > li:hover > ul 
+{
+    display:block;		
+	cursor:pointer;
+}
+
+ul > li > ul > li
+{
+	display:block;
+	list-style:none;
+	position:relative;
+	margin:0;
+	padding:0;
+	width:185px;
+	height:50px;
+	font-family:Bookman Old Style;
+}
+
+ul > li > ul > li a:link, ul > li > ul > li a:visited 
+{
+	text-decoration:none;
+	display:block;
+	background:#000;
+	color:#C2C2C2;
+	border:1px solid #C2C2C2;
+	width:185px;
+	height:40px;
+	padding-top:10px;
+	text-align:center;
+	text-align:middle;
+}
+
+ul > li > ul > li a:hover 
+{
+	background-color:silver;
+	color:#000;
+}
+
+.left-box
+{
+	width:20%;
+	float:left;
+}
+
+.right-box
+{
+	width:76%;
+	float:left;
+	padding-left:15px;
+	padding-right:10px;
+}
+
+.menu2
+{
+	width:100%;
+	float:left;
+	padding-bottom:20px;
+}
+
+.standard
+{
+	color:white;
+	font-size:14px;
+	margin-left:20px;
+	width:100%;
+	text-align:justify;
+	font-family:Bookman Old Style;
+}
+
+.footer
+{
+	color:#C2C2C2;
+	width:100%;
+	margin-top:50px;
+	padding-right:20px;
+	text-align:right;
+	font-family:Bookman Old Style;
+}
+
