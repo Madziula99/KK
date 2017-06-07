@@ -1,40 +1,33 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-	<head>
-		<title>Konfigurator PC</title>
-		<meta charset="UTF-8"/>
-		<link rel="Shortcut icon" href="image/favicon.ico" />
-		<link href="css/arkusz.css" rel="stylesheet" >
-	</head>
+<head>
+	<title>Konfigurator PC</title>
+	<meta charset="UTF-8"/>
+	<link rel="Shortcut icon" href="image/favicon.ico"/>
+	<link href="css/arkusz.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
 
-	<body>
-		<div class="logo"> <center> <img src="image/logo.png" /> </center> <div>
-
-		<div class="div">
-			<div id="slajder-zdjec">
-				<div id="ramka-slajdow">
-					<div id="slajdy">
-						<img id="slide1" src="image/slider.png" alt="" style="width:100%" />
-						<img id="slide2" src="image/slider.png" alt="" style="width:100%" />
-						<img id="slide3" src="image/slider.png" alt="" style="width:100%" />
-						<img id="slide4" src="image/slider.png" alt="" style="width:100%" />
-						<img id="slide5" src="image/slider.png" alt="" style="width:100%" />
-					</div>
-				</div>
-				<div id="nawigacja">
-					<a href="#slide1">1</a>
-					<a href="#slide2">2</a>
-					<a href="#slide3">3</a>
-					<a href="#slide4">4</a>
-					<a href="#slide5">5</a>
-				</div>
-			</div>
-
-			<hr />
-
-			<div class="menu">
+<body>
+	<div id="menu">
+		<div  id="spacer"></div>
+		<div class="menu-item" id="glowna" onclick="javascript:przejdz('html/komponenty.html')">Strona główna</div>
+		<div class="menu-item" id="zestawy" onclick="javascript:przejdz('html/zestawy.html')">Zestawy</div>
+		<div class="menu-item" id="komponenty" onclick="javascript:przejdz('html/komponenty.html')">Komponenty</div>
+		<div class="menu-item" id="podzespoly" onclick="javascript:przejdz('html/podzespoly.html')">Podzespoły</div>
+		<div class="menu-item" id="kontakt" onclick="javascript:przejdz('html/kontakt.html')">Kontakt</div>
+		<div id="spacer"></div>
+	</div>
+	//zastanowić się czy na pewno tak zrobię slideshow
+	//raczej nie
+	<div class="w3-content w3-section" style="width:70%;">
+	  <img class="mySlides" src="image/slider.png" style="width:100%">
+	  <img class="mySlides" src="image/slider.png" style="width:100%">
+	  <img class="mySlides" src="image/slider.png" style="width:100%">
+</div>
+			<!--<div class="menu">
 				<ul>
-					<li onclick="przejdz()"><a href="index.html">Strona Główna</a></li>
+					<li onclick="przejdz()">Strona Główna</li>
 					<li><a href="zestawy.html">Gotowe Zestawy</a></li>
 					<li><a href="komponenty.html">Komponenty</a>
 						<ul>
@@ -56,10 +49,10 @@
 					</li>
 					<li><a href="kontakt.html">Kontakt</a></li>
 				</ul>
-			</div>
+			</div> -->
 
 			<!-- Główna część strony-->
-			<iframe>
+			<iframe id="rameczka">
 
 			</iframe>
 
@@ -68,13 +61,26 @@
 			</footer>
 
 		</div>
-	</body>
+</body>
 </html>
 
-
 <script>
- function przejdz()
+	var myIndex = 0;
+	carousel();
+	function carousel() {
+	    var i;
+	    var x = document.getElementsByClassName("mySlides");
+	    for (i = 0; i < x.length; i++) {
+	       x[i].style.display = "none";
+	    }
+	    myIndex++;
+	    if (myIndex > x.length) {myIndex = 1}
+	    x[myIndex-1].style.display = "block";
+	    setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+ function przejdz(x)
  {
-	 document.getElementById('rameczka').src = 
+	 console.log(x);
+	 document.getElementById('rameczka').src = x;
  }
 </script>
