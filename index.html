@@ -9,10 +9,10 @@
   <body>
     <div id="main">
       <div id="menu">
-        <a href=""><div class="menu">Strona Główna</div></a>
-        <a href=""><div class="menu">Zestawy</div></a>
-        <a href=""><div class="menu">Laptopy</div></a>
-        <a href=""><div class="menu">Kontakt</div></a>
+        <div class="menu" onclick="javascript:przejdz('html/glowna.html')">Strona Główna</div>
+        <div class="menu" onclick="javascript:przejdz('html/zestawy.html')">Zestawy</div>
+        <div class="menu" onclick="javascript:przejdz('html/laptopy.html')">Laptopy</div>
+        <div class="menu" onclick="javascript:przejdz('html/kontakt.html')">Kontakt</div>
       </div>
 
       <div id="frame">
@@ -21,3 +21,11 @@
     </div>
   </body>
 </html>
+
+<script>
+ function przejdz(x)
+ {
+	 console.log(x);
+	 document.getElementById('ramka').src = x;
+ }
+</script>
