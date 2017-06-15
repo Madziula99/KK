@@ -1,86 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-<head>
-	<title>Konfigurator PC</title>
-	<meta charset="UTF-8"/>
-	<link rel="Shortcut icon" href="image/favicon.ico"/>
-	<link href="css/arkusz.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
+  <head>
+    <title>Konfigurator</title>
+  	<meta charset="UTF-8"/>
+  	<link rel="Shortcut icon" href="image/favicon.ico"/>
+  	<link href="css/arkusz.css" rel="stylesheet">
+  </head>
 
-<body>
-	<div id="menu">
-		<div  id="spacer"></div>
-		<div class="menu-item" id="glowna" onclick="javascript:przejdz('html/komponenty.html')">Strona główna</div>
-		<div class="menu-item" id="zestawy" onclick="javascript:przejdz('html/zestawy.html')">Zestawy</div>
-		<div class="menu-item" id="komponenty" onclick="javascript:przejdz('html/komponenty.html')">Komponenty</div>
-		<div class="menu-item" id="podzespoly" onclick="javascript:przejdz('html/podzespoly.html')">Podzespoły</div>
-		<div class="menu-item" id="kontakt" onclick="javascript:przejdz('html/kontakt.html')">Kontakt</div>
-		<div id="spacer"></div>
-	</div>
-	//zastanowić się czy na pewno tak zrobię slideshow
-	//raczej nie
-	<div class="w3-content w3-section" style="width:70%;">
-	  <img class="mySlides" src="image/slider.png" style="width:100%">
-	  <img class="mySlides" src="image/slider.png" style="width:100%">
-	  <img class="mySlides" src="image/slider.png" style="width:100%">
-</div>
-			<!--<div class="menu">
-				<ul>
-					<li onclick="przejdz()">Strona Główna</li>
-					<li><a href="zestawy.html">Gotowe Zestawy</a></li>
-					<li><a href="komponenty.html">Komponenty</a>
-						<ul>
-							<li><a href="procesor.html">Procesor</a></li>
-							<li><a href="wentylator.html">Wentylator</a></li>
-							<li><a href="plytaglowna.html">Płyta Główna</a></li>
-							<li><a href="obudowa.html">Obudowa</a></li>
-							<li><a href="monitor.html">Monitor</a></li>
-						</ul>
-					</li>
-					<li><a href="jakdobracpodzespoly.html">Jak dobrać podzespoły?</a>
-						<ul>
-							<li><a href="jakprocesor.html">Procesor</a></li>
-							<li><a href="jakplytaglowna.html">Płyta Główna</a></li>
-							<li><a href="jakpamiec.html">Pamięć</a></li>
-							<li><a href="jakkartagraficzna.html">Karta graficzna</a></li>
-							<li><a href="jakdodatki.html">Dodatki</a></li>
-						</ul>
-					</li>
-					<li><a href="kontakt.html">Kontakt</a></li>
-				</ul>
-			</div> -->
+  <body>
+    <div id="main">
+      <div id="menu">
+        <a href=""><div class="menu">Strona Główna</div></a>
+        <a href=""><div class="menu">Zestawy</div></a>
+        <a href=""><div class="menu">Laptopy</div></a>
+        <a href=""><div class="menu">Kontakt</div></a>
+      </div>
 
-			<!-- Główna część strony-->
-			<iframe id="rameczka">
-
-			</iframe>
-
-			<footer class="footer">
-				<p>by Stopka</p>
-			</footer>
-
-		</div>
-</body>
+      <div id="frame">
+        <iframe src=""></iframe>
+      </div>
+    </div>
+  </body>
 </html>
-
-<script>
-	var myIndex = 0;
-	carousel();
-	function carousel() {
-	    var i;
-	    var x = document.getElementsByClassName("mySlides");
-	    for (i = 0; i < x.length; i++) {
-	       x[i].style.display = "none";
-	    }
-	    myIndex++;
-	    if (myIndex > x.length) {myIndex = 1}
-	    x[myIndex-1].style.display = "block";
-	    setTimeout(carousel, 2000); // Change image every 2 seconds
-	}
- function przejdz(x)
- {
-	 console.log(x);
-	 document.getElementById('rameczka').src = x;
- }
-</script>
