@@ -1,0 +1,14 @@
+#obrazek {
+  width: 50%;
+  float: left;
+}
+
+#zestaw {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Bookman Old Style;
+  color: #ddd;
+  margin-bottom: 20px;
+  float: left;
+  width:50%;
+}
