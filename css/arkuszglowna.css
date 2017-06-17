@@ -21,6 +21,8 @@ hr {
 }
 
 .obrazek {
+  display: flex;
+  justify-content: center;
   float: left;
   padding: 0px 10px 0px 10px;
   width: 18%;
