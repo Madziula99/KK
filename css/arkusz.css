@@ -47,33 +47,3 @@ iframe {
   width:100%;
   height:100%;
 }
-
-#kontakt {
-  font-size: 24px;
-  font-family:Bookman Old Style;
-  color: #dddddd;
-  opacity: 0.75;
-  font-weight:bold;
-  line-height: 30px;
-  text-align: center;
-}
-
-.knaglowek {
-  font-family:Bookman Old Style;
-  color: #dddddd;
-  font-weight:bold;
-  line-height: 30px;
-  text-align: center;
-  margin-top: 250px;
-}
-
-.kontakt {
-  width: 100%;
-  margin:auto;
-  display: flex;
-  justify-content: center;
-}
-
-.socialmedia {
-  margin: 10px;
-}
